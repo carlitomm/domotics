@@ -1,0 +1,14 @@
+[Unit]
+
+Description=start runslam
+
+After=mysql.service
+
+[Service]
+ExecStart=/usr/local/bin/uvbot-bringup.sh
+
+KillMode=process
+
+[Install]
+
+WantedBy=default.target
